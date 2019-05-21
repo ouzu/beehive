@@ -30,7 +30,7 @@ See the [install instructions](http://golang.org/doc/install.html).
 
 The recommended way is to fetch the sources and run make.
 
-    git clone https://github.com/muesli/beehive.git
+    git clone --recursive https://github.com/muesli/beehive.git
     cd beehive
     make
 
@@ -135,7 +135,7 @@ the `-bind` and `-canonicalurl` parameters. For example:
 
 or
 
-    docker run --name beehive -d -e CANONICAL_URL="http://192.168.0.1:8181" -p 8181:8181 fribbledom/beehive
+    docker run --name beehive -d -e CANONICAL_URL=http://192.168.0.1:8181 -p 8181:8181 fribbledom/beehive
 
 ## Development
 
